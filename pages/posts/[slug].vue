@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col justify-center items-center">
-    <div class="mt-6 flex flex-col gap-6 w-max" v-if="blog != null">
-      <div class="flex justify-between">
+    <div class="mt-6 flex flex-col gap-6 w-full p-2 md:w-max" v-if="blog != null">
+      <div class="flex flex-col sm:flex-row gap-4 sm:justify-between">
         <div class="flex gap-1">
           <NuxtImg
             :src="blog.user.avatar"
